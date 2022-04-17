@@ -1,0 +1,138 @@
+{
+    "name": "hbuilderx-theme-support",
+    "description": "让您的HBuilderX更漂亮。",
+    "displayName": "HBuilderX自定义主题辅助工具，轻松定制漂亮主题。同时内置多套主题，并支持从浏览器安装主题。",
+    "version": "1.1.0",
+    "publisher": "xiaomimi",
+    "engines": {
+        "HBuilderX": "^2.9.3"
+    },
+    "categories": [
+        "Other"
+    ],
+    "main": "./extension",
+    "activationEvents": [
+        "onCommand:ThemeSupport",
+        "onCommand:ThemeExport",
+        "onCommand:ThemeResetCurrent",
+        "onCommand:ThemeResetAll",
+        "onCommand:ThemeSetVscodeLight",
+        "onCommand:ThemeBrowse",
+        "onView:themeCustomView",
+        "onCustomEditor:自定义主题辅助工具",
+        "onUri"
+    ],
+    "contributes": {
+        "viewsContainers": {
+            "rightside": [
+                {
+                    "id": "themeCustomView",
+                    "title": "自定义主题辅助工具"
+                }
+            ]
+        },
+        "views": {
+            "themeCustomView": [
+                {
+                    "id": "themeCustomView",
+                    "title": "自定义主题辅助工具"
+                }
+            ]
+        },
+        "customEditors": [
+            {
+                "viewType": "自定义主题辅助工具",
+                "selector": [
+                    {
+                        "fileNamePattern": "自定义主题辅助工具"
+                    }
+                ],
+                "priority": "default"
+            }
+        ],
+        "commands": [
+            {
+                "command": "ThemeSupport",
+                "title": "打开主题自定义工具"
+            },
+            {
+                "command": "ThemeExport",
+                "title": "导出/分享"
+            },
+            {
+                "command": "ThemeResetCurrent",
+                "title": "重置当前主题自定义数据"
+            },
+            {
+                "command": "ThemeResetAll",
+                "title": "重置全部主题自定义数据"
+            },
+            {
+                "command": "ThemeSetVscodeLight",
+                "title": "vscode Light+"
+            },
+            {
+                "command": "ThemeBrowse",
+                "title": "浏览更多主题"
+            }
+        ],
+        "expressions": {
+            "isVscodeLight": "config.theme-custom.name == 'vscode-light' && config.editor.colorScheme == 'Default'",
+            "isRed": "config.theme-custom.name == 'red' && config.editor.colorScheme == 'Atom One Dark'"
+        },
+        "menus": {
+            "menubar/tool": [
+                {
+                    "title": "自定义主题辅助工具",
+                    "group": "tool.theme",
+                    "id": "tool.theme"
+                },
+                {
+                    "command": "ThemeSupport",
+                    "title": "打开主题自定义工具",
+                    "group": "tool.theme@1"
+                },
+                {
+                    "command": "ThemeExport",
+                    "title": "导出/分享我的主题",
+                    "group": "tool.theme@1"
+                },
+                {
+                    "group": "tool.theme@2"
+                },
+                {
+                    "command": "ThemeResetCurrent",
+                    "title": "重置当前主题",
+                    "group": "tool.theme@2"
+                },
+                {
+                    "command": "ThemeResetAll",
+                    "title": "重置全部主题",
+                    "group": "tool.theme@2"
+                },
+                {
+                    "group": "tool.theme@3"
+                },
+                {
+                    "command": "ThemeSetVscodeLight",
+                    "title": "vscode Light+主题",
+                    "group": "tool.theme@3",
+                    "checked": "expression.isVscodeLight"
+                },
+                {
+                    "command": "ThemeBrowse",
+                    "title": "浏览更多主题",
+                    "group": "tool.theme@3"
+                }
+            ]
+        }
+    },
+    "extensionDependencies": [
+        "plugin-manager"
+    ],
+    "dependencies": {
+        "fs-extra": "^8.1.0",
+        "json-comments": "^0.2.1",
+        "lodash": "^4.17.21"
+    }
+}
