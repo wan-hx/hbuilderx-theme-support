@@ -2,7 +2,7 @@
 {
     "theme-custom.name": "vscode-light",
     "theme-custom.author": "xiaomimi",
-    "theme-custom.version": "0.0.3",
+    "theme-custom.version": "0.0.4",
     "editor.colorScheme": "Default",
     "workbench.colorCustomizations": {
         "[Default]": {
@@ -13,7 +13,7 @@
             "editorSuggestWidget.background": "#F3f3f3",
             "editorSuggestWidget.selectedBackground": "#d6ebff",
             "editor.selection": "#add6ff",
-            "editor.caretLine": "#add6ff",
+            "editor.caretLine": "#e6f2ff",
             "editor.whitespace": "#FFFFFF",
             "editor.foldMarker.expanded.foreground": "#448ca3",
             "editor.foldMarker.expanded.background": "#FFFFFF",
