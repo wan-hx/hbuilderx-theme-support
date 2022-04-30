@@ -2,7 +2,7 @@
     "name": "hbuilderx-theme-support",
     "description": "让您的HBuilderX更漂亮。",
     "displayName": "HBuilderX自定义主题辅助工具，轻松定制漂亮主题。同时内置多套主题，并支持从浏览器安装主题。",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "publisher": "xiaomimi",
     "engines": {
         "HBuilderX": "^2.9.3"
