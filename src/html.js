@@ -443,7 +443,7 @@ function getWebviewContent() {
                                     </div>
                                 </div>
                                 <div class="mt-3 text-center">
-                                    <button class="btn btn-outline-primary fz8" @click="setColor();" title="在HBuilderX内预览当前颜色">预览</button>
+                                    <button class="btn btn-outline-primary fz8" @click="setColor();" title="在HBuilderX内预览当前颜色">设置颜色</button>
                                     <button class="btn btn-outline-danger fz8" @click="resetOptionColor({});" title="重置当前颜色">重置</button>
                                 </div>
                             </div>
