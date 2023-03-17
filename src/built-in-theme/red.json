@@ -3,7 +3,6 @@
     "theme-custom.author": "xiaomimi",
     "theme-custom.version": "0.0.1",
     "editor.colorScheme": "Atom One Dark",
-    "editor.tokenColorCustomizations": "2",
     "workbench.colorCustomizations": {
         "[Atom One Dark]": {
             "button.background": "#883333",

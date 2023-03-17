@@ -514,6 +514,7 @@ module.exports = {
     goShare,
     resetCurrentTheme,
     resetAllTheme,
+    installTheme,
     setBuiltInTheme,
     themeDownload,
     getThemeColor

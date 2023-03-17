@@ -5,6 +5,7 @@ let CatCustomEditorProvider = require('./src/main.js');
 
 let utils = require('./src/lib/utils.js');
 let common = require('./src/lib/common.js');
+let selecteMoreTheme = require('./src/moreTheme.js');
 
 let hxVersion = hx.env.appVersion;
 hxVersion = hxVersion.replace('-alpha', '').replace(/.\d{8}/, '');
@@ -82,7 +83,7 @@ function activate(context) {
 
     // 浏览更多主题
     let ThemeBrowse = hx.commands.registerCommand('ThemeBrowse', () => {
-        hx.env.openExternal('https://static-0c1fa337-7340-4755-9bec-f766d7d31833.bspapp.com/');
+        selecteMoreTheme();
     });
     context.subscriptions.push(ThemeBrowse);
 }
