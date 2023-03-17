@@ -28,7 +28,7 @@ async function selecteMoreTheme() {
     const selected = result.label;
     if (selected == "关闭") return;
     if (selected == "在线浏览更多主题") {
-        hx.env.openExternal('https://static-0c1fa337-7340-4755-9bec-f766d7d31833.bspapp.com/')
+        hx.env.openExternal('https://hbuilderx-theme.github.io/')
         return;
     };
 
